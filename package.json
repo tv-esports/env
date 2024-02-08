@@ -1,0 +1,27 @@
+{
+	"name": "env",
+	"version": "1.0.0",
+	"description": "The private TV env utility package",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"ht": "tsc && node dist/index.js",
+		"test": "node dist/index.js",
+		"build": "tsc",
+		"watch": "tsc -w"
+	},
+	"files": [
+		"dist"
+	],
+	"author": "vKxni",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^20.11.16",
+		"@typescript-eslint/eslint-plugin": "^6.2.1",
+		"@typescript-eslint/parser": "^6.2.1",
+		"colors": "^1.4.0",
+		"dotenv": "^16.4.1",
+		"eslint": "^8.46.0",
+		"typescript": "^5.1.0"
+	}
+}
