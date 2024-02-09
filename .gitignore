@@ -23,11 +23,6 @@ yarn.lock
 /.next/
 /out/
 
-# production
-/build
-/dist
-dist
-
 # misc
 .DS_Store
 *.pem
