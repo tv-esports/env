@@ -20,7 +20,7 @@ function isKeywordCheckOptions(obj: unknown): obj is KeywordCheckOptions {
  * @param {boolean} onlyWarnings - If true, log warnings only and do not throw errors
  * @throws {Error} - If the .env file is not found or empty (unless onlyWarnings is true)
  */
-export function k(keywords: KeyOrKeys | KeywordCheckOptions, onlyWarnings: boolean = false): void {
+export function envguard(keywords: KeyOrKeys | KeywordCheckOptions, onlyWarnings: boolean = false): void {
 	// Check if the .env file exists
 	if (!fs.existsSync('.env')) {
 		throw new Error(colors.red('.env file not found'));

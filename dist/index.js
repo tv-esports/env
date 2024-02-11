@@ -15,5 +15,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./functions/env"), exports);
-__exportStar(require("./functions/keyword"), exports);
+__exportStar(require("./functions/envguard"), exports);
 __exportStar(require("./functions/logger"), exports);

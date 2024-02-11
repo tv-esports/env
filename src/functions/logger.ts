@@ -95,7 +95,7 @@ export class L {
 	private logToConsole(level: LogLevel, formattedMessage: string): void {
 		switch (level) {
 			case LogLevel.SOFT:
-				console.log(colors.magenta(formattedMessage));
+				console.log(colors.yellow(formattedMessage));
 				break;
 			case LogLevel.ERROR:
 				console.log(colors.red(formattedMessage));
@@ -125,20 +125,3 @@ export class L {
 		this.logMessage(this.options.logLevel, message);
 	}
 }
-
-// import { L, LogLevel } from 'x';
-
-// export * from './functions/env';
-// export * from './functions/keyword';
-// export * from './functions/logger';
-
-// const logger = new L({
-// 	logLevel: LogLevel.SOFT,
-// 	enableTimestamp: true,
-// 	timeZone: 'Europe/Berlin',
-// 	dateFormat: 'en-US',
-// 	showLogLevel: true,
-// 	enableConsole: true,
-// 	writeToFile: true,
-// 	filePath: 'AUTO',
-// });
