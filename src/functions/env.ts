@@ -35,14 +35,14 @@ export function env(advanced?: boolean): EnvironmentFileInformation {
 			updatedAt,
 		};
 
-		consoleInfo(fileInformation);
+		envinfo(fileInformation);
 		return fileInformation;
 	}
 
 	return { exists: true };
 }
 
-function consoleInfo(fileInfo: EnvironmentFileInformation): void {
+function envinfo(fileInfo: EnvironmentFileInformation): void {
 	console.log(colors.cyan.bold('\n-- General information --'));
 	console.log(colors.cyan('- Current working directory:'), process.cwd());
 	console.log(colors.cyan('- .env working directory:'), path.dirname(fileInfo.path || ''));

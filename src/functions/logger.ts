@@ -3,19 +3,19 @@ import path from 'path';
 import colors from 'colors';
 
 export enum LogLevel {
-  SOFT = 'soft',
-  ERROR = 'error',
+	SOFT = 'soft',
+	ERROR = 'error',
 }
 
 interface LoggerOptions {
-  logLevel: LogLevel;
-  enableTimestamp: boolean;
-  timeZone: string; // Specify timezone (e.g., 'Europe/Berlin')
-  dateFormat: string; // Specify custom date format using the Intl.DateTimeFormat options
-  showLogLevel: boolean; // Show log level in messages
-  enableConsole: boolean; // Enable or disable console output
-  writeToFile: boolean; // Enable or disable writing logs to a file
-  filePath?: string; // Specify the file path for writing logs, 'AUTO' for dynamic filename
+	logLevel: LogLevel;
+	enableTimestamp: boolean;
+	timeZone: string; // Specify timezone (e.g., 'Europe/Berlin')
+	dateFormat: string; // Specify custom date format using the Intl.DateTimeFormat options
+	showLogLevel: boolean; // Show log level in messages
+	enableConsole: boolean; // Enable or disable console output
+	writeToFile: boolean; // Enable or disable writing logs to a file
+	filePath?: string; // Specify the file path for writing logs, 'AUTO' for dynamic filename
 }
 
 export class L {
